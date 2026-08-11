@@ -1,5 +1,8 @@
 {
-  "rewrites": [
-    { "source": "/release-gate", "destination": "/api/release-gate" }
+  "builds": [
+    { "src": "api/release-gate.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/release-gate", "dest": "/api/release-gate.js" }
   ]
 }
