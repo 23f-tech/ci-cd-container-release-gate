@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/release-gate", "destination": "/api/release-gate" }
+  ]
+}
